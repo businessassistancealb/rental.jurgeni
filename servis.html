@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO_TIRANA_AL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <header>
+        <img src="lio.jpg" alt="Business Assistance Photo">
+        <h1>AUTO_TIRANA_AL</h1>
+        <!-- Inside the header or desired location -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Rreth nesh</a>
+        <a href="products.html">Cmimet/Paketat</a>
+        <a href="contact.html">Kontaktoni</a>
+    </nav>
+
+    <h1> SEKTORI I SERVISEVE TE AUTOMJETEVE </h1>
+	<section id="automjete-info" class="container">
+        
+        
+        <!-- Car Image and Short Description -->
+<!-- Car Image and Short Description -->
+<!-- Car Image and Short Description -->
+<div class="car-container">
+    <img src="https://inalbania.al/wp-content/uploads/2023/09/SERVIS-GERTI-SAUK.jpg" alt="Mercedes-Benz E400">
+    <h1 class="short-description">Auto Servis Gerti</h1>
+    <button onclick="toggleDescription(0)">See More</button>
+    <p class="full-description" style="display: none;">
+        <!-- Full Description Goes Here -->
+        Auto Servis Gerti, me eksperiencë disa vjeçare në treg, ofron:<br> 
+		Servis<br> 
+		Pjesë Këmbimi<br>
+		Makina për Shitje.<br>
+
+        Ofrohet shërbim i kualifikuar për çdo llojë makine, duke ofruar:<br>
+		shërbime motorrike<br> 
+		xhenerike<br> 
+		mekanike<br> 
+		mbushje kondicioneri me gaz dhe shërbime të tjera të përgjithshme.<br>
+		Shërbim i shpejtë, korrekt dhe i garantuar.<br>
+
+        Ofrohen Pjesë Këmbimi cilësore, të Reja dhe të Përdorura.<br>
+		Pjesë këmbimi origjinale dhe me çmime të arsyeshme.<br>
+		Do të gjeni çfarëdo llojë pjese të cilën ju kerkoni, për çdo model makine.<br>
+        VENDODHJA SAUK,TIRANE<br>
+        <!-- Instagram Button -->
+        <a href="https://instagram.com/pjes_kembimi_te_gjitha_makinat" target="_blank">
+            <button style="margin-top: 10px;">Visit Instagram</button>
+        </a>
+ 
+ 
+ 
+        <!-- Google Maps Button -->
+        <a href="https://goo.gl/maps/jAReQGK3SMbfQDfN7" target="_blank">
+            <button style="margin-top: 10px;">Vendodhja ne Google Maps</button>
+        </a>
+    </p>
+</div>
+
+
+    </section>
+
+    <!-- Bottom Strip -->
+    <footer class="bottom-strip">
+        <p>&copy; 2024 auto_tirana_al. All rights reserved.</p>
+    </footer>
+
+<script>
+    function toggleDescription(buttonIndex) {
+        var fullDescriptions = document.querySelectorAll('.full-description');
+        var seeMoreButtons = document.querySelectorAll('button');
+
+        var fullDescription = fullDescriptions[buttonIndex];
+        var seeMoreButton = seeMoreButtons[buttonIndex];
+
+        if (fullDescription.style.display === 'none') {
+            fullDescription.style.display = 'block';
+            
+        } else {
+            fullDescription.style.display = 'none';
+            seeMoreButton.innerHTML = 'See More';
+        }
+    }
+</script>
+v
+	
+</body>
+
+</html>
